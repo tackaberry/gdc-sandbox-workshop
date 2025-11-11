@@ -7,6 +7,7 @@ labels:
 resources:
 - deployment.yaml
 - service.yaml
+- network.yaml
 
 configMapGenerator:
 - name: app-configmap-1
