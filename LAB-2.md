@@ -10,12 +10,12 @@ build ./workloads/translate-api/app translate
 # show harbor
 
 # change repo name "tack-1" in app.properties
-vi workloads/translate-ap/base/cluster/app.properties
+vi workloads/translate-api/base/cluster/app.properties
 
-mv workloads/translate-ap/base/cluster/app-secrets.properties.example workloads/translate-api/base/cluster/app-secrets.properties
+mv workloads/translate-api/base/cluster/app-secrets.properties.example workloads/translate-api/base/cluster/app-secrets.properties
 
 # change translate api key
-vi workloads/translate-ap/base/cluster/app-secrets.properties
+vi workloads/translate-api/base/cluster/app-secrets.properties
 
 ku apply -k workloads/translate-api/base/cluster
 ko apply -k workloads/translate-api/base/org
@@ -28,7 +28,7 @@ ku get svc
 ```
 Get webserver ip address
 ```bash
-export WEBSERVER_IP=$(ku get svc -l app-name=web-server -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
+export WEBSERVER_IP=$(ku get svc -l app-name=translation-app -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
 echo $WEBSERVER_IP
 echo "curl -X GET http://$WEBSERVER_IP"
 ```

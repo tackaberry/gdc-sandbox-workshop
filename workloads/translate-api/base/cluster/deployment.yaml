@@ -32,16 +32,3 @@ spec:
       imagePullSecrets:
       - name: harbor-secret
 
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: translation-app-service
-spec:
-  type: LoadBalancer
-  selector:
-    app: translation-app
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 8080

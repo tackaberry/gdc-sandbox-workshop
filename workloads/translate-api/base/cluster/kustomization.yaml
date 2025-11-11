@@ -2,7 +2,7 @@
 labels:
 - includeSelectors: true
   pairs:
-    app-name: translate-app
+    app-name: translation-app
 
 resources:
 - deployment.yaml
