@@ -41,3 +41,13 @@ curl -X GET http://$TRANSLATION_IP
 curl -X POST -H 'Content-Type: application/json' -d '{"text": "Hello, world!", "target_language": "es"}' http://${TRANSLATION_IP}/translate
 ```
 
+
+4. Make a change and redeploy. 
+
+```bash
+vi workloads/translation-app/app/main.py
+build ./workloads/translate-api/app translate
+ku rollout restart deploy translation-app
+
+```
+3. ReTest over ssh

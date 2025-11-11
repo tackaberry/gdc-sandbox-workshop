@@ -13,7 +13,13 @@ logging.basicConfig(level=logging.INFO) # Set the desired logging level
 
 @app.route('/', methods=['GET'])
 def home():
-    print(request.headers)
+    
+    app.logger.info("Running GET /")
+    app.logger.info({"request":{"headers":{"User-Agent":request.headers.get('User-Agent')},
+                                "args":request.args,
+                                "origin":request.remote_addr,
+                               }})
+
     return jsonify({"_message":"This is the translate app.", 
                     "request":{"headers":{"User-Agent":request.headers.get('User-Agent')},
                                 "args":request.args,
