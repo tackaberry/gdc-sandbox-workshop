@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.14-slim
 ADD index.html index.html
 ADD server.py server.py
 EXPOSE 80
