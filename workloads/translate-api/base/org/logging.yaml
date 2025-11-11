@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     matchPodNames:
-      - translate-app
+      - translation-app
   parser: json
   logAccessLevel: ao
-  serviceName: translate-app
+  serviceName: translation-app
