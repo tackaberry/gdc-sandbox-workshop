@@ -1,11 +1,14 @@
 import os
 import requests # Use requests for HTTP calls
 from flask import Flask, request, jsonify
+import logging
 
 app = Flask(__name__)
 
 TRANSLATE_API_URL = 'https://translation.googleapis.com/language/translate/v2'
 TRANSLATE_APP_API_KEY = os.environ['TRANSLATE_APP_API_KEY']
+
+logging.basicConfig(level=logging.INFO) # Set the desired logging level
 
 
 @app.route('/', methods=['GET'])
@@ -21,7 +24,7 @@ def home():
 @app.route('/translate', methods=['POST'])
 def translate_text():
 
-    print(request)
+    app.logger.info("Running POST /translate")
 
     try:
         data = request.get_json()
@@ -37,6 +40,9 @@ def translate_text():
             'target': target_language
         }
 
+        app.logger.info(f"Requested language: {target_language}")
+        app.logger.info(f"Text to translate: {text_to_translate}")
+
         response = requests.post(TRANSLATE_API_URL, params=params)
         response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
 
@@ -46,11 +52,13 @@ def translate_text():
         # It's usually: {'data': {'translations': [{'translatedText': '...', 'detectedSourceLanguage': '...'}]}}
         if 'data' in result and 'translations' in result['data'] and len(result['data']['translations']) > 0:
             translation_info = result['data']['translations'][0]
-            return jsonify({
+            response = jsonify({
                 'original_text': text_to_translate,
                 'translated_text': translation_info['translatedText'],
                 'detected_source_language': translation_info.get('detectedSourceLanguage')
             })
+            app.logger.info(response)
+            return response
         else:
             return jsonify({'error': 'Unexpected response format from Translation API', 'details': result}), 500
 

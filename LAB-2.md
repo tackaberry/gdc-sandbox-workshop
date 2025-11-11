@@ -28,7 +28,16 @@ ku get svc
 ```
 Get webserver ip address
 ```bash
-export WEBSERVER_IP=$(ku get svc -l app-name=translation-app -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
-echo $WEBSERVER_IP
-echo "curl -X GET http://$WEBSERVER_IP"
+export TRANSLATION_IP=$(ku get svc -l app-name=translation-app -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
+echo $TRANSLATION_IP
+echo "export TRANSLATION_IP=${TRANSLATION_IP}"
+
 ```
+
+```bash
+
+curl -X GET http://$TRANSLATION_IP
+
+curl -X POST -H 'Content-Type: application/json' -d '{"text": "Hello, world!", "target_language": "es"}' http://${TRANSLATION_IP}/translate
+```
+
