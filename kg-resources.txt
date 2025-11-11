@@ -1,0 +1,233 @@
+NAME                                              SHORTNAMES         APIVERSION                                                      NAMESPACED   KIND
+bindings                                                             v1                                                              true         Binding
+componentstatuses                                 cs                 v1                                                              false        ComponentStatus
+configmaps                                        cm                 v1                                                              true         ConfigMap
+endpoints                                         ep                 v1                                                              true         Endpoints
+events                                            ev                 v1                                                              true         Event
+limitranges                                       limits             v1                                                              true         LimitRange
+namespaces                                        ns                 v1                                                              false        Namespace
+nodes                                             no                 v1                                                              false        Node
+persistentvolumeclaims                            pvc                v1                                                              true         PersistentVolumeClaim
+persistentvolumes                                 pv                 v1                                                              false        PersistentVolume
+pods                                              po                 v1                                                              true         Pod
+podtemplates                                                         v1                                                              true         PodTemplate
+replicationcontrollers                            rc                 v1                                                              true         ReplicationController
+resourcequotas                                    quota              v1                                                              true         ResourceQuota
+secrets                                                              v1                                                              true         Secret
+serviceaccounts                                   sa                 v1                                                              true         ServiceAccount
+services                                          svc                v1                                                              true         Service
+mutatingwebhookconfigurations                                        admissionregistration.k8s.io/v1                                 false        MutatingWebhookConfiguration
+validatingadmissionpolicies                                          admissionregistration.k8s.io/v1                                 false        ValidatingAdmissionPolicy
+validatingadmissionpolicybindings                                    admissionregistration.k8s.io/v1                                 false        ValidatingAdmissionPolicyBinding
+validatingwebhookconfigurations                                      admissionregistration.k8s.io/v1                                 false        ValidatingWebhookConfiguration
+customresourcedefinitions                         crd,crds           apiextensions.k8s.io/v1                                         false        CustomResourceDefinition
+apiservices                                                          apiregistration.k8s.io/v1                                       false        APIService
+globalresourceregistrations                                          apiregistry.global.private.gdc.goog/v1alpha1                    true         GlobalResourceRegistration
+controllerrevisions                                                  apps/v1                                                         true         ControllerRevision
+daemonsets                                        ds                 apps/v1                                                         true         DaemonSet
+deployments                                       deploy             apps/v1                                                         true         Deployment
+replicasets                                       rs                 apps/v1                                                         true         ReplicaSet
+statefulsets                                      sts                apps/v1                                                         true         StatefulSet
+selfsubjectreviews                                                   authentication.k8s.io/v1                                        false        SelfSubjectReview
+tokenreviews                                                         authentication.k8s.io/v1                                        false        TokenReview
+localsubjectaccessreviews                                            authorization.k8s.io/v1                                         true         LocalSubjectAccessReview
+selfsubjectaccessreviews                                             authorization.k8s.io/v1                                         false        SelfSubjectAccessReview
+selfsubjectrulesreviews                                              authorization.k8s.io/v1                                         false        SelfSubjectRulesReview
+subjectaccessreviews                                                 authorization.k8s.io/v1                                         false        SubjectAccessReview
+horizontalpodautoscalers                          hpa                autoscaling/v2                                                  true         HorizontalPodAutoscaler
+cronjobs                                          cj                 batch/v1                                                        true         CronJob
+jobs                                                                 batch/v1                                                        true         Job
+billingaccountbindingreplicas                                        billing.global.gdc.goog/v1                                      true         BillingAccountBindingReplica
+billingaccountbindings                                               billing.global.gdc.goog/v1                                      true         BillingAccountBinding
+billingaccountreplicas                                               billing.global.gdc.goog/v1                                      true         BillingAccountReplica
+billingaccounts                                                      billing.global.gdc.goog/v1                                      true         BillingAccount
+orgbootstraps                                                        bootstrap.mz.global.private.gdc.goog/v1alpha1                   true         OrgBootstrap
+orgzones                                                             bootstrap.mz.global.private.gdc.goog/v1alpha1                   true         OrgZone
+tokenrequests                                                        bootstrap.mz.global.private.gdc.goog/v1alpha1                   true         TokenRequest
+certificatesigningrequests                        csr                certificates.k8s.io/v1                                          false        CertificateSigningRequest
+configs                                                              config.gatekeeper.sh/v1alpha1                                   true         Config
+rootsyncs                                                            configsync.gke.io/v1beta1                                       true         RootSync
+blockinvalidgdchrestrictedservice                                    constraints.gatekeeper.sh/v1beta1                               false        BlockInvalidGDCHRestrictedService
+gdchallowedchars                                                     constraints.gatekeeper.sh/v1beta1                               false        GDCHAllowedChars
+gdchallowedlength                                                    constraints.gatekeeper.sh/v1beta1                               false        GDCHAllowedLength
+gdchallowednamespaces                                                constraints.gatekeeper.sh/v1beta1                               false        GDCHAllowedNamespaces
+gdchreadonly                                                         constraints.gatekeeper.sh/v1beta1                               false        GDCHReadOnly
+gdchreservednames                                                    constraints.gatekeeper.sh/v1beta1                               false        GDCHReservedNames
+gdchreservedprefix                                                   constraints.gatekeeper.sh/v1beta1                               false        GDCHReservedPrefix
+gdchreservedsuffix                                                   constraints.gatekeeper.sh/v1beta1                               false        GDCHReservedSuffix
+gdchrestrictattribute                                                constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictAttribute
+gdchrestrictattributerange                                           constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictAttributeRange
+gdchrestrictbyattributes                                             constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictByAttributes
+gdchrestrictedservice                                                constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictedService
+gdchrestrictfinalizerremoval                                         constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictFinalizerRemoval
+gdchrestrictresource                                                 constraints.gatekeeper.sh/v1beta1                               false        GDCHRestrictResource
+gdchsuffixednamespace                                                constraints.gatekeeper.sh/v1beta1                               false        GDCHSuffixedNamespace
+gdchsystemclusterresource                                            constraints.gatekeeper.sh/v1beta1                               false        GDCHSystemClusterResource
+blockinvalidgdchrestrictedservice                                    constraints.global.gatekeeper.sh/v1beta1                        false        BlockInvalidGDCHRestrictedService
+blockinvalidgdchrestrictedservicereplicas                            constraints.global.gatekeeper.sh/v1beta1                        false        BlockInvalidGDCHRestrictedServiceReplica
+gdchallowedchars                                                     constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedChars
+gdchallowedcharsreplicas                                             constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedCharsReplica
+gdchallowedlength                                                    constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedLength
+gdchallowedlengthreplicas                                            constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedLengthReplica
+gdchallowednamespaces                                                constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedNamespaces
+gdchallowednamespacesreplicas                                        constraints.global.gatekeeper.sh/v1beta1                        false        GDCHAllowedNamespacesReplica
+gdchreadonly                                                         constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReadOnly
+gdchreadonlyreplicas                                                 constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReadOnlyReplica
+gdchreservednames                                                    constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedNames
+gdchreservednamesreplicas                                            constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedNamesReplica
+gdchreservedprefix                                                   constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedPrefix
+gdchreservedprefixreplicas                                           constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedPrefixReplica
+gdchreservedsuffix                                                   constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedSuffix
+gdchreservedsuffixreplicas                                           constraints.global.gatekeeper.sh/v1beta1                        false        GDCHReservedSuffixReplica
+gdchrestrictattribute                                                constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictAttribute
+gdchrestrictattributerange                                           constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictAttributeRange
+gdchrestrictattributerangereplicas                                   constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictAttributeRangeReplica
+gdchrestrictattributereplicas                                        constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictAttributeReplica
+gdchrestrictbyattributes                                             constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictByAttributes
+gdchrestrictbyattributesreplicas                                     constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictByAttributesReplica
+gdchrestrictedservice                                                constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictedService
+gdchrestrictedservicereplicas                                        constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictedServiceReplica
+gdchrestrictfinalizerremoval                                         constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictFinalizerRemoval
+gdchrestrictfinalizerremovalreplicas                                 constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictFinalizerRemovalReplica
+gdchrestrictobjectstorageattributevalue                              constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictObjectStorageAttributeValue
+gdchrestrictobjectstorageattributevaluereplicas                      constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictObjectStorageAttributeValueReplica
+gdchrestrictresource                                                 constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictResource
+gdchrestrictresourcereplicas                                         constraints.global.gatekeeper.sh/v1beta1                        false        GDCHRestrictResourceReplica
+gdchsuffixednamespace                                                constraints.global.gatekeeper.sh/v1beta1                        false        GDCHSuffixedNamespace
+gdchsuffixednamespacereplicas                                        constraints.global.gatekeeper.sh/v1beta1                        false        GDCHSuffixedNamespaceReplica
+gdchsystemclusterresource                                            constraints.global.gatekeeper.sh/v1beta1                        false        GDCHSystemClusterResource
+gdchsystemclusterresourcereplicas                                    constraints.global.gatekeeper.sh/v1beta1                        false        GDCHSystemClusterResourceReplica
+leases                                                               coordination.k8s.io/v1                                          true         Lease
+globalsecrets                                                        core.global.private.gdc.goog/v1alpha1                           true         GlobalSecret
+endpointslices                                                       discovery.k8s.io/v1                                             true         EndpointSlice
+etcdcarotations                                                      etcd.mz.global.private.gdc.goog/v1alpha1                        true         EtcdCARotation
+etcdclusterconfigoverrides                                           etcd.mz.global.private.gdc.goog/v1alpha1                        true         EtcdClusterConfigOverride
+etcdclusters                                                         etcd.mz.global.private.gdc.goog/v1alpha1                        true         EtcdCluster
+etcdzones                                                            etcd.mz.global.private.gdc.goog/v1alpha1                        true         EtcdZone
+events                                            ev                 events.k8s.io/v1                                                true         Event
+expansiontemplate                                                    expansion.gatekeeper.sh/v1alpha1                                false        ExpansionTemplate
+providers                                                            externaldata.gatekeeper.sh/v1beta1                              false        Provider
+flowschemas                                                          flowcontrol.apiserver.k8s.io/v1                                 false        FlowSchema
+prioritylevelconfigurations                                          flowcontrol.apiserver.k8s.io/v1                                 false        PriorityLevelConfiguration
+customrolereplicas                                                   iam.global.gdc.goog/v1                                          true         CustomRoleReplica
+customroles                                                          iam.global.gdc.goog/v1                                          true         CustomRole
+iamrolebindings                                                      iam.global.gdc.goog/v1                                          true         IAMRoleBinding
+iamroles                                                             iam.global.gdc.goog/v1                                          true         IAMRole
+identityproviderconfigreplicas                                       iam.global.gdc.goog/v1                                          true         IdentityProviderConfigReplica
+identityproviderconfigs                                              iam.global.gdc.goog/v1                                          true         IdentityProviderConfig
+zonalrolebindingreplicas                                             iam.global.gdc.goog/v1                                          true         ZonalRoleBindingReplica
+zonalrolebindings                                                    iam.global.gdc.goog/v1                                          true         ZonalRoleBinding
+ioauthmethodreplicas                                                 iam.global.private.gdc.goog/v1alpha1                            true         IOAuthMethodReplica
+ioauthmethods                                                        iam.global.private.gdc.goog/v1alpha1                            true         IOAuthMethod
+apiserverendpoints                                                   iam.private.gdc.goog/v1alpha1                                   true         APIServerEndpoint
+clusterroletemplates                                                 iam.private.gdc.goog/v1alpha1                                   true         ClusterRoleTemplate
+expirationclusterrolebindings                                        iam.private.gdc.goog/v1alpha1                                   false        ExpirationClusterRoleBinding
+expirationrolebindings                                               iam.private.gdc.goog/v1alpha1                                   true         ExpirationRoleBinding
+organizationroletemplates                                            iam.private.gdc.goog/v1alpha1                                   true         OrganizationRoleTemplate
+projectroletemplates                                                 iam.private.gdc.goog/v1alpha1                                   true         ProjectRoleTemplate
+roletemplates                                                        iam.private.gdc.goog/v1alpha1                                   true         RoleTemplate
+groups                                                               identity.storagegrid.netapp.storage.private.gdc.goog/v1alpha1   false        Group
+storageversions                                                      internal.apiserver.k8s.io/v1alpha1                              false        StorageVersion
+subnets                                                              ipam.global.gdc.goog/v1                                         true         Subnet
+globaladdresspoolclaims                                              ipam.global.private.gdc.goog/v1alpha1                           true         GlobalAddressPoolClaim
+globaladdresspoolreplicas                                            ipam.global.private.gdc.goog/v1alpha1                           true         GlobalAddressPoolReplica
+globaladdresspools                                                   ipam.global.private.gdc.goog/v1alpha1                           true         GlobalAddressPool
+aeadkeys                                                             kms.gdc.goog/v1                                                 true         AEADKey
+keyexports                                                           kms.gdc.goog/v1                                                 true         KeyExport
+keyimports                                                           kms.gdc.goog/v1                                                 true         KeyImport
+rotationjobs                                                         kms.gdc.goog/v1                                                 false        RotationJob
+signingkeys                                                          kms.gdc.goog/v1                                                 true         SigningKey
+mzaeadkeys                                                           kms.global.gdc.goog/v1                                          true         MZAEADKey
+globalrootkeys                                                       kms.global.private.gdc.goog/v1                                  true         GlobalRootKey
+resourcegroups                                                       kpt.dev/v1alpha1                                                true         ResourceGroup
+kubeapiserverreplicas                                                lcm.global.private.gdc.goog/v1alpha1                            true         KubeAPIServerReplica
+kubeapiservers                                                       lcm.global.private.gdc.goog/v1alpha1                            true         KubeAPIServer
+globalapizones                                                       location.mz.global.private.gdc.goog/v1alpha1                    true         GlobalAPIZone
+zoneexclusions                                                       location.mz.global.private.gdc.goog/v1alpha1                    true         ZoneExclusion
+zones                                                                location.mz.global.private.gdc.goog/v1alpha1                    true         Zone
+zoneselectionresultreplicas                                          location.mz.global.private.gdc.goog/v1alpha1                    true         ZoneSelectionResultReplica
+zoneselectionresults                                                 location.mz.global.private.gdc.goog/v1alpha1                    true         ZoneSelectionResult
+zoneselections                                                       location.mz.global.private.gdc.goog/v1alpha1                    true         ZoneSelection
+datasourcereplicas                                                   monitoring.global.private.gdc.goog/v1alpha1                     true         DatasourceReplica
+datasources                                                          monitoring.global.private.gdc.goog/v1alpha1                     true         Datasource
+assign                                                               mutations.gatekeeper.sh/v1                                      false        Assign
+assignimage                                                          mutations.gatekeeper.sh/v1alpha1                                false        AssignImage
+assignmetadata                                                       mutations.gatekeeper.sh/v1                                      false        AssignMetadata
+modifyset                                                            mutations.gatekeeper.sh/v1                                      false        ModifySet
+clustermeshes                                                        network.global.private.gdc.goog/v1alpha1                        true         ClusterMesh
+clustermeshreplicas                                                  network.global.private.gdc.goog/v1alpha1                        true         ClusterMeshReplica
+dnsregistrationreplicas                                              network.global.private.gdc.goog/v1alpha1                        true         DNSRegistrationReplica
+dnsregistrations                                                     network.global.private.gdc.goog/v1alpha1                        true         DNSRegistration
+dnszonereplicas                                                      network.global.private.gdc.goog/v1alpha1                        true         DNSZoneReplica
+dnszones                                                             network.global.private.gdc.goog/v1alpha1                        true         DNSZone
+resourcerecordsetreplicas                                            network.global.private.gdc.goog/v1alpha1                        true         ResourceRecordSetReplica
+resourcerecordsets                                                   network.global.private.gdc.goog/v1alpha1                        true         ResourceRecordSet
+zonednsservers                                                       network.global.private.gdc.goog/v1alpha1                        true         ZoneDNSServers
+zonednsserversreplicas                                               network.global.private.gdc.goog/v1alpha1                        true         ZoneDNSServersReplica
+backendservicepolicies                                               networking.global.gdc.goog/v1                                   true         BackendServicePolicy
+backendservicepolicyreplicas                                         networking.global.gdc.goog/v1                                   true         BackendServicePolicyReplica
+backendservicereplicas                                               networking.global.gdc.goog/v1                                   true         BackendServiceReplica
+backendservices                                                      networking.global.gdc.goog/v1                                   true         BackendService
+forwardingruleexternalreplicas                                       networking.global.gdc.goog/v1                                   true         ForwardingRuleExternalReplica
+forwardingruleexternals                                              networking.global.gdc.goog/v1                                   true         ForwardingRuleExternal
+forwardingruleinternalreplicas                                       networking.global.gdc.goog/v1                                   true         ForwardingRuleInternalReplica
+forwardingruleinternals                                              networking.global.gdc.goog/v1                                   true         ForwardingRuleInternal
+healthcheckreplicas                                                  networking.global.gdc.goog/v1                                   true         HealthCheckReplica
+healthchecks                                                         networking.global.gdc.goog/v1                                   true         HealthCheck
+manageddnszonereplicas                                               networking.global.gdc.goog/v1                                   true         ManagedDNSZoneReplica
+manageddnszones                                                      networking.global.gdc.goog/v1                                   true         ManagedDNSZone
+projectnetworkpolicies                            pnp                networking.global.gdc.goog/v1                                   true         ProjectNetworkPolicy
+projectnetworkpolicyreplicas                      pnpreplica         networking.global.gdc.goog/v1                                   true         ProjectNetworkPolicyReplica
+resourcerecordsetreplicas                                            networking.global.gdc.goog/v1                                   true         ResourceRecordSetReplica
+resourcerecordsets                                                   networking.global.gdc.goog/v1                                   true         ResourceRecordSet
+ingressclasses                                                       networking.k8s.io/v1                                            false        IngressClass
+ingresses                                         ing                networking.k8s.io/v1                                            true         Ingress
+ipaddresses                                       ip                 networking.k8s.io/v1alpha1                                      false        IPAddress
+networkpolicies                                   netpol             networking.k8s.io/v1                                            true         NetworkPolicy
+servicecidrs                                                         networking.k8s.io/v1alpha1                                      false        ServiceCIDR
+runtimeclasses                                                       node.k8s.io/v1                                                  false        RuntimeClass
+bucketlocationconfigs                                                object.global.gdc.goog/v1                                       false        BucketLocationConfig
+bucketlocationreplicas                                               object.global.gdc.goog/v1                                       false        BucketLocationReplica
+bucketlocations                                                      object.global.gdc.goog/v1                                       false        BucketLocation
+buckets                                                              object.global.gdc.goog/v1                                       true         Bucket
+bucketinforeplicas                                                   object.global.private.gdc.goog/v1                               true         BucketInfoReplica
+bucketinfos                                                          object.global.private.gdc.goog/v1                               true         BucketInfo
+bucketprefixes                                                       object.storage.private.gdc.goog/v1alpha1                        true         BucketPrefix
+certificateauthorities                                               pki.security.gdc.goog/v1                                        true         CertificateAuthority
+certificateissuers                                                   pki.security.gdc.goog/v1                                        true         CertificateIssuer
+certificaterequests                                                  pki.security.gdc.goog/v1                                        true         CertificateRequest
+certificates                                                         pki.security.gdc.goog/v1                                        true         Certificate
+poddisruptionbudgets                              pdb                policy/v1                                                       true         PodDisruptionBudget
+clusterrolebindings                                                  rbac.authorization.k8s.io/v1                                    false        ClusterRoleBinding
+clusterroles                                                         rbac.authorization.k8s.io/v1                                    false        ClusterRole
+rolebindings                                                         rbac.authorization.k8s.io/v1                                    true         RoleBinding
+roles                                                                rbac.authorization.k8s.io/v1                                    true         Role
+releases                                                             release.mz.global.private.gdc.goog/v1alpha1                     true         Release
+podschedulingcontexts                                                resource.k8s.io/v1alpha2                                        true         PodSchedulingContext
+resourceclaimparameters                                              resource.k8s.io/v1alpha2                                        true         ResourceClaimParameters
+resourceclaims                                                       resource.k8s.io/v1alpha2                                        true         ResourceClaim
+resourceclaimtemplates                                               resource.k8s.io/v1alpha2                                        true         ResourceClaimTemplate
+resourceclasses                                                      resource.k8s.io/v1alpha2                                        false        ResourceClass
+resourceclassparameters                                              resource.k8s.io/v1alpha2                                        true         ResourceClassParameters
+resourceslices                                                       resource.k8s.io/v1alpha2                                        false        ResourceSlice
+projectreplicas                                                      resourcemanager.global.gdc.goog/v1                              true         ProjectReplica
+projects                                                             resourcemanager.global.gdc.goog/v1                              true         Project
+projectserviceaccountreplicas                                        resourcemanager.global.gdc.goog/v1                              true         ProjectServiceAccountReplica
+projectserviceaccounts                                               resourcemanager.global.gdc.goog/v1                              true         ProjectServiceAccount
+priorityclasses                                   pc                 scheduling.k8s.io/v1                                            false        PriorityClass
+rotatablesecrets                                                     secretrotation.private.gdc.goog/v1alpha1                        true         RotatableSecret
+rotationrequests                                                     secretrotation.private.gdc.goog/v1alpha1                        true         RotationRequest
+constraintpodstatuses                                                status.gatekeeper.sh/v1beta1                                    true         ConstraintPodStatus
+constrainttemplatepodstatuses                                        status.gatekeeper.sh/v1beta1                                    true         ConstraintTemplatePodStatus
+expansiontemplatepodstatuses                                         status.gatekeeper.sh/v1beta1                                    true         ExpansionTemplatePodStatus
+mutatorpodstatuses                                                   status.gatekeeper.sh/v1beta1                                    true         MutatorPodStatus
+volumereplicationrelationshipreplicas                                storage.global.gdc.goog/v1                                      true         VolumeReplicationRelationshipReplica
+volumereplicationrelationships                                       storage.global.gdc.goog/v1                                      true         VolumeReplicationRelationship
+csidrivers                                                           storage.k8s.io/v1                                               false        CSIDriver
+csinodes                                                             storage.k8s.io/v1                                               false        CSINode
+csistoragecapacities                                                 storage.k8s.io/v1                                               true         CSIStorageCapacity
+storageclasses                                    sc                 storage.k8s.io/v1                                               false        StorageClass
+volumeattachments                                                    storage.k8s.io/v1                                               false        VolumeAttachment
+volumeattributesclasses                           vac                storage.k8s.io/v1alpha1                                         false        VolumeAttributesClass
+constrainttemplates                                                  templates.gatekeeper.sh/v1                                      false        ConstraintTemplate
+virtualmachineimages                              vmimage,vmimages   virtualmachine.global.gdc.goog/v1                               true         VirtualMachineImage

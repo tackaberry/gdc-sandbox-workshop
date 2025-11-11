@@ -1,0 +1,160 @@
+NAME                               SHORTNAMES          APIVERSION                                     NAMESPACED   KIND
+bindings                                               v1                                             true         Binding
+componentstatuses                  cs                  v1                                             false        ComponentStatus
+configmaps                         cm                  v1                                             true         ConfigMap
+endpoints                          ep                  v1                                             true         Endpoints
+events                             ev                  v1                                             true         Event
+limitranges                        limits              v1                                             true         LimitRange
+namespaces                         ns                  v1                                             false        Namespace
+nodes                              no                  v1                                             false        Node
+persistentvolumeclaims             pvc                 v1                                             true         PersistentVolumeClaim
+persistentvolumes                  pv                  v1                                             false        PersistentVolume
+pods                               po                  v1                                             true         Pod
+podtemplates                                           v1                                             true         PodTemplate
+replicationcontrollers             rc                  v1                                             true         ReplicationController
+resourcequotas                     quota               v1                                             true         ResourceQuota
+secrets                                                v1                                             true         Secret
+serviceaccounts                    sa                  v1                                             true         ServiceAccount
+services                           svc                 v1                                             true         Service
+challenges                                             acme.cert-manager.io/v1                        true         Challenge
+orders                                                 acme.cert-manager.io/v1                        true         Order
+logmons                                                addons.gke.io/v1alpha1                         true         Logmon
+metricsserver                                          addons.gke.io/v1alpha1                         false        MetricsServer
+workloadlogmons                                        addons.gke.io/v1alpha1                         true         WorkloadLogmon
+mutatingwebhookconfigurations                          admissionregistration.k8s.io/v1                false        MutatingWebhookConfiguration
+validatingwebhookconfigurations                        admissionregistration.k8s.io/v1                false        ValidatingWebhookConfiguration
+agents                             agent               agent.k8s.elastic.co/v1alpha1                  true         Agent
+anthosmetrics                                          anthos.gke.io/v1                               true         AnthosMetric
+healthcheckjobs                                        anthos.gke.io/v1                               true         HealthcheckJob
+healthchecks                                           anthos.gke.io/v1                               true         Healthcheck
+customresourcedefinitions          crd,crds            apiextensions.k8s.io/v1                        false        CustomResourceDefinition
+apiservices                                            apiregistration.k8s.io/v1                      false        APIService
+apmservers                         apm                 apm.k8s.elastic.co/v1                          true         ApmServer
+controllerrevisions                                    apps/v1                                        true         ControllerRevision
+daemonsets                         ds                  apps/v1                                        true         DaemonSet
+deployments                        deploy              apps/v1                                        true         Deployment
+replicasets                        rs                  apps/v1                                        true         ReplicaSet
+statefulsets                       sts                 apps/v1                                        true         StatefulSet
+selfsubjectreviews                                     authentication.k8s.io/v1                       false        SelfSubjectReview
+tokenreviews                                           authentication.k8s.io/v1                       false        TokenReview
+localsubjectaccessreviews                              authorization.k8s.io/v1                        true         LocalSubjectAccessReview
+selfsubjectaccessreviews                               authorization.k8s.io/v1                        false        SelfSubjectAccessReview
+selfsubjectrulesreviews                                authorization.k8s.io/v1                        false        SelfSubjectRulesReview
+subjectaccessreviews                                   authorization.k8s.io/v1                        false        SubjectAccessReview
+horizontalpodautoscalers           hpa                 autoscaling/v2                                 true         HorizontalPodAutoscaler
+elasticsearchautoscalers           esa                 autoscaling.k8s.elastic.co/v1alpha1            true         ElasticsearchAutoscaler
+cronjobs                           cj                  batch/v1                                       true         CronJob
+jobs                                                   batch/v1                                       true         Job
+beats                              beat                beat.k8s.elastic.co/v1beta1                    true         Beat
+certificaterequests                cr,crs              cert-manager.io/v1                             true         CertificateRequest
+certificates                       cert,certs          cert-manager.io/v1                             true         Certificate
+clusterissuers                                         cert-manager.io/v1                             false        ClusterIssuer
+issuers                                                cert-manager.io/v1                             true         Issuer
+certificatesigningrequests         csr                 certificates.k8s.io/v1                         false        CertificateSigningRequest
+ciliumclusterwidenetworkpolicies   ccnp                cilium.io/v2                                   false        CiliumClusterwideNetworkPolicy
+ciliumegressgatewaypolicies        cegp                cilium.io/v2                                   false        CiliumEgressGatewayPolicy
+ciliumegressnatpolicies            cenp                cilium.io/v2alpha1                             false        CiliumEgressNATPolicy
+ciliumendpoints                    cep,ciliumep        cilium.io/v2                                   true         CiliumEndpoint
+ciliumexternalworkloads            cew                 cilium.io/v2                                   false        CiliumExternalWorkload
+ciliumidentities                   ciliumid            cilium.io/v2                                   false        CiliumIdentity
+ciliumnetworkpolicies              cnp,ciliumnp        cilium.io/v2                                   true         CiliumNetworkPolicy
+ciliumnodes                        cn,ciliumn          cilium.io/v2                                   false        CiliumNode
+configs                                                config.gatekeeper.sh/v1alpha1                  true         Config
+allowedtokenrequest                                    constraints.gatekeeper.sh/v1beta1              false        AllowedTokenRequest
+gdchreservedprefix                                     constraints.gatekeeper.sh/v1beta1              false        GDCHReservedPrefix
+leases                                                 coordination.k8s.io/v1                         true         Lease
+endpointslices                                         discovery.k8s.io/v1                            true         EndpointSlice
+elasticsearches                    es                  elasticsearch.k8s.elastic.co/v1                true         Elasticsearch
+enterprisesearches                 ent                 enterprisesearch.k8s.elastic.co/v1             true         EnterpriseSearch
+events                             ev                  events.k8s.io/v1                               true         Event
+expansiontemplate                                      expansion.gatekeeper.sh/v1alpha1               false        ExpansionTemplate
+providers                                              externaldata.gatekeeper.sh/v1beta1             false        Provider
+featuregates                                           featuregate.gdc.goog/v1                        false        FeatureGate
+stages                                                 featuregate.gdc.goog/v1                        false        Stage
+flowschemas                                            flowcontrol.apiserver.k8s.io/v1beta3           false        FlowSchema
+prioritylevelconfigurations                            flowcontrol.apiserver.k8s.io/v1beta3           false        PriorityLevelConfiguration
+protectedapplicationgroups                             gkebackup.gke.io/v1                            true         ProtectedApplicationGroup
+protectedapplications                                  gkebackup.gke.io/v1                            true         ProtectedApplication
+gpuallocations                                         gpu.cluster.gke.io/v1                          true         GPUAllocation
+backups                            bmdb                k8s.mariadb.com/v1alpha1                       true         Backup
+connections                        cmdb                k8s.mariadb.com/v1alpha1                       true         Connection
+databases                          dmdb                k8s.mariadb.com/v1alpha1                       true         Database
+grants                             gmdb                k8s.mariadb.com/v1alpha1                       true         Grant
+mariadbs                           mdb                 k8s.mariadb.com/v1alpha1                       true         MariaDB
+maxscales                          mxs                 k8s.mariadb.com/v1alpha1                       true         MaxScale
+restores                           rmdb                k8s.mariadb.com/v1alpha1                       true         Restore
+sqljobs                            smdb                k8s.mariadb.com/v1alpha1                       true         SqlJob
+users                              umdb                k8s.mariadb.com/v1alpha1                       true         User
+kibanas                            kb                  kibana.k8s.elastic.co/v1                       true         Kibana
+fluentbits                                             logging.private.gdc.goog/v1alpha1              true         FluentBit
+logstashes                         ls                  logstash.k8s.elastic.co/v1alpha1               true         Logstash
+elasticmapsservers                 ems                 maps.k8s.elastic.co/v1alpha1                   true         ElasticMapsServer
+addresspools                                           metallb.io/v1beta1                             true         AddressPool
+bfdprofiles                                            metallb.io/v1beta1                             true         BFDProfile
+bgpadvertisements                                      metallb.io/v1beta1                             true         BGPAdvertisement
+bgppeers                                               metallb.io/v1beta2                             true         BGPPeer
+communities                                            metallb.io/v1beta1                             true         Community
+ipaddresspools                                         metallb.io/v1beta1                             true         IPAddressPool
+l2advertisements                                       metallb.io/v1beta1                             true         L2Advertisement
+nodes                                                  metrics.k8s.io/v1beta1                         false        NodeMetrics
+pods                                                   metrics.k8s.io/v1beta1                         true         PodMetrics
+cortexingesters                                        monitoring.private.gdc.goog/v1alpha1           true         CortexIngester
+datasources                                            monitoring.private.gdc.goog/v1alpha1           true         Datasource
+metricsproxysidecars                                   monitoring.private.gdc.goog/v1alpha1           true         MetricsProxySidecar
+servicelevelobjectives             slo,slos            monitoring.private.gdc.goog/v1alpha1           true         ServiceLevelObjective
+assign                                                 mutations.gatekeeper.sh/v1                     false        Assign
+assignimage                                            mutations.gatekeeper.sh/v1alpha1               false        AssignImage
+assignmetadata                                         mutations.gatekeeper.sh/v1                     false        AssignMetadata
+modifyset                                              mutations.gatekeeper.sh/v1                     false        ModifySet
+dpv2multinics                                          networking.baremetal.cluster.gke.io/v1alpha1   false        Dpv2Multinic
+bgpadvertisedroutes                                    networking.gke.io/v1                           true         BGPAdvertisedRoute
+bgpgateways                                            networking.gke.io/v1                           true         BGPGateway
+bgploadbalancers                                       networking.gke.io/v1                           true         BGPLoadBalancer
+bgppeers                                               networking.gke.io/v1                           true         BGPPeer
+bgpreceivedroutes                                      networking.gke.io/v1                           true         BGPReceivedRoute
+bgpsessions                                            networking.gke.io/v1                           true         BGPSession
+clustercidrconfigs                 ccc                 networking.gke.io/v1alpha1                     false        ClusterCIDRConfig
+clusterdns                                             networking.gke.io/v1alpha1                     false        ClusterDNS
+egressnatpolicies                                      networking.gke.io/v1                           false        EgressNATPolicy
+flatipmodes                                            networking.gke.io/v1alpha1                     false        FlatIPMode
+multiclusterconnectivityconfigs                        networking.gke.io/v1alpha1                     true         MultiClusterConnectivityConfig
+networkgatewaygroups                                   networking.gke.io/v1                           true         NetworkGatewayGroup
+networkgatewaynodes                                    networking.gke.io/v1                           true         NetworkGatewayNode
+networkinterfaces                                      networking.gke.io/v1                           true         NetworkInterface
+networkloggings                    nl                  networking.gke.io/v1alpha1                     false        NetworkLogging
+networks                                               networking.gke.io/v1                           false        Network
+nodenetworkpolicies                nnp                 networking.gke.io/v1alpha1                     false        NodeNetworkPolicy
+trafficsteerings                                       networking.gke.io/v1alpha1                     true         TrafficSteering
+vpntunnels                                             networking.gke.io/v1alpha1                     true         VPNTunnel
+ingressclasses                                         networking.k8s.io/v1                           false        IngressClass
+ingresses                          ing                 networking.k8s.io/v1                           true         Ingress
+networkpolicies                    netpol              networking.k8s.io/v1                           true         NetworkPolicy
+runtimeclasses                                         node.k8s.io/v1                                 false        RuntimeClass
+poddisruptionbudgets               pdb                 policy/v1                                      true         PodDisruptionBudget
+clusterrolebindings                                    rbac.authorization.k8s.io/v1                   false        ClusterRoleBinding
+clusterroles                                           rbac.authorization.k8s.io/v1                   false        ClusterRole
+rolebindings                                           rbac.authorization.k8s.io/v1                   true         RoleBinding
+roles                                                  rbac.authorization.k8s.io/v1                   true         Role
+priorityclasses                    pc                  scheduling.k8s.io/v1                           false        PriorityClass
+volumesnapshotclasses              vsclass,vsclasses   snapshot.storage.k8s.io/v1                     false        VolumeSnapshotClass
+volumesnapshotcontents             vsc,vscs            snapshot.storage.k8s.io/v1                     false        VolumeSnapshotContent
+volumesnapshots                    vs                  snapshot.storage.k8s.io/v1                     true         VolumeSnapshot
+scheduledsparkapplications         scheduledsparkapp   sparkoperator.k8s.io/v1beta2                   true         ScheduledSparkApplication
+sparkapplications                  sparkapp            sparkoperator.k8s.io/v1beta2                   true         SparkApplication
+stackconfigpolicies                scp                 stackconfigpolicy.k8s.elastic.co/v1alpha1      true         StackConfigPolicy
+constraintpodstatuses                                  status.gatekeeper.sh/v1beta1                   true         ConstraintPodStatus
+constrainttemplatepodstatuses                          status.gatekeeper.sh/v1beta1                   true         ConstraintTemplatePodStatus
+expansiontemplatepodstatuses                           status.gatekeeper.sh/v1beta1                   true         ExpansionTemplatePodStatus
+mutatorpodstatuses                                     status.gatekeeper.sh/v1beta1                   true         MutatorPodStatus
+csidrivers                                             storage.k8s.io/v1                              false        CSIDriver
+csinodes                                               storage.k8s.io/v1                              false        CSINode
+csistoragecapacities                                   storage.k8s.io/v1                              true         CSIStorageCapacity
+storageclasses                     sc                  storage.k8s.io/v1                              false        StorageClass
+volumeattachments                                      storage.k8s.io/v1                              false        VolumeAttachment
+syncsets                                               syncset.gatekeeper.sh/v1alpha1                 false        SyncSet
+constrainttemplates                                    templates.gatekeeper.sh/v1                     false        ConstraintTemplate
+bundles                                                trust.cert-manager.io/v1alpha1                 false        Bundle
+vmruntimepreflightchecks           vmruntimepfc        virtualmachine.private.gdc.goog/v1             true         VMRuntimePreflightCheck
+vmruntimes                                             virtualmachine.private.gdc.goog/v1             false        VMRuntime
+vmruntimepreflightchecks           vmruntimepfc        vm.cluster.gke.io/v1                           true         VMRuntimePreflightCheck
+vmruntimes                                             vm.cluster.gke.io/v1                           false        VMRuntime

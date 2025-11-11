@@ -1,0 +1,426 @@
+NAME                                              SHORTNAMES                                       APIVERSION                                          NAMESPACED   KIND
+bindings                                                                                           v1                                                  true         Binding
+componentstatuses                                 cs                                               v1                                                  false        ComponentStatus
+configmaps                                        cm                                               v1                                                  true         ConfigMap
+endpoints                                         ep                                               v1                                                  true         Endpoints
+events                                            ev                                               v1                                                  true         Event
+limitranges                                       limits                                           v1                                                  true         LimitRange
+namespaces                                        ns                                               v1                                                  false        Namespace
+nodes                                             no                                               v1                                                  false        Node
+persistentvolumeclaims                            pvc                                              v1                                                  true         PersistentVolumeClaim
+persistentvolumes                                 pv                                               v1                                                  false        PersistentVolume
+pods                                              po                                               v1                                                  true         Pod
+podtemplates                                                                                       v1                                                  true         PodTemplate
+replicationcontrollers                            rc                                               v1                                                  true         ReplicationController
+resourcequotas                                    quota                                            v1                                                  true         ResourceQuota
+secrets                                                                                            v1                                                  true         Secret
+serviceaccounts                                   sa                                               v1                                                  true         ServiceAccount
+services                                          svc                                              v1                                                  true         Service
+mutatingwebhookconfigurations                                                                      admissionregistration.k8s.io/v1                     false        MutatingWebhookConfiguration
+validatingadmissionpolicies                                                                        admissionregistration.k8s.io/v1                     false        ValidatingAdmissionPolicy
+validatingadmissionpolicybindings                                                                  admissionregistration.k8s.io/v1                     false        ValidatingAdmissionPolicyBinding
+validatingwebhookconfigurations                                                                    admissionregistration.k8s.io/v1                     false        ValidatingWebhookConfiguration
+aicspackages                                                                                       aics.gdc.goog/v1                                    true         AICSPackage
+notebooks                                                                                          aiplatform.gdc.goog/v1                              true         Notebook
+packages                                                                                           aiplatform.gdc.goog/v1                              true         Package
+backupplans                                                                                        alloydbomni.dbadmin.gdc.goog/v1                     true         BackupPlan
+backups                                                                                            alloydbomni.dbadmin.gdc.goog/v1                     true         Backup
+createstandbyjobs                                                                                  alloydbomni.dbadmin.gdc.goog/v1                     true         CreateStandbyJob
+dbclusters                                                                                         alloydbomni.dbadmin.gdc.goog/v1                     true         DBCluster
+deletestandbyjobs                                                                                  alloydbomni.dbadmin.gdc.goog/v1                     true         DeleteStandbyJob
+exports                                                                                            alloydbomni.dbadmin.gdc.goog/v1                     true         Export
+externalservers                                                                                    alloydbomni.dbadmin.gdc.goog/v1                     true         ExternalServer
+imports                                                                                            alloydbomni.dbadmin.gdc.goog/v1                     true         Import
+migrations                                                                                         alloydbomni.dbadmin.gdc.goog/v1                     true         Migration
+restores                                                                                           alloydbomni.dbadmin.gdc.goog/v1                     true         Restore
+customresourcedefinitions                         crd,crds                                         apiextensions.k8s.io/v1                             false        CustomResourceDefinition
+apiservices                                                                                        apiregistration.k8s.io/v1                           false        APIService
+controllerrevisions                                                                                apps/v1                                             true         ControllerRevision
+daemonsets                                        ds                                               apps/v1                                             true         DaemonSet
+deployments                                       deploy                                           apps/v1                                             true         Deployment
+replicasets                                       rs                                               apps/v1                                             true         ReplicaSet
+statefulsets                                      sts                                              apps/v1                                             true         StatefulSet
+distributionpolicies                                                                               artifact.private.gdc.goog/v1alpha1                  true         DistributionPolicy
+failoverregistries                                                                                 artifact.private.gdc.goog/v1alpha1                  true         FailoverRegistry
+harborprojects                                                                                     artifact.private.gdc.goog/v1alpha1                  true         HarborProject
+harborrobotaccounts                               hra                                              artifact.private.gdc.goog/v1alpha1                  true         HarborRobotAccount
+harborusercredentials                             huc                                              artifact.private.gdc.goog/v1alpha1                  true         HarborUserCredential
+manualdistributions                                                                                artifact.private.gdc.goog/v1alpha1                  true         ManualDistribution
+persistentvolumeclaimchecks                                                                        artifact.private.gdc.goog/v1alpha1                  true         PersistentVolumeClaimCheck
+releasemetadata                                                                                    artifact.private.gdc.goog/v1alpha1                  false        ReleaseMetadata
+harborinstancebackupplans                                                                          artifactregistry.gdc.goog/v1                        true         HarborInstanceBackupPlan
+harborinstancebackuprepositories                                                                   artifactregistry.gdc.goog/v1                        true         HarborInstanceBackupRepository
+harborinstancebackups                                                                              artifactregistry.gdc.goog/v1                        true         HarborInstanceBackup
+harborinstanceprojects                                                                             artifactregistry.gdc.goog/v1                        true         HarborInstanceProject
+harborinstancerestores                                                                             artifactregistry.gdc.goog/v1                        true         HarborInstanceRestore
+harborinstances                                                                                    artifactregistry.gdc.goog/v1                        true         HarborInstance
+harborinstancedatabasebackups                                                                      artifactregistry.private.gdc.goog/v1alpha1          true         HarborInstanceDatabaseBackup
+harborinstancedatabaserestores                                                                     artifactregistry.private.gdc.goog/v1alpha1          true         HarborInstanceDatabaseRestore
+harborinstanceregistrybackups                                                                      artifactregistry.private.gdc.goog/v1alpha1          true         HarborInstanceRegistryBackup
+harborinstanceregistryrestores                                                                     artifactregistry.private.gdc.goog/v1alpha1          true         HarborInstanceRegistryRestore
+clibundlemetadata                                                                                  artifactview.private.gdc.goog/v1alpha1              true         CLIBundleMetadata
+servicemetadata                                                                                    artifactview.private.gdc.goog/v1alpha1              false        ServiceMetadata
+virussignaturemetadata                                                                             artifactview.private.gdc.goog/v1alpha1              true         VirusSignatureMetadata
+selfsubjectreviews                                                                                 authentication.k8s.io/v1                            false        SelfSubjectReview
+tokenreviews                                                                                       authentication.k8s.io/v1                            false        TokenReview
+localsubjectaccessreviews                                                                          authorization.k8s.io/v1                             true         LocalSubjectAccessReview
+selfsubjectaccessreviews                                                                           authorization.k8s.io/v1                             false        SelfSubjectAccessReview
+selfsubjectrulesreviews                                                                            authorization.k8s.io/v1                             false        SelfSubjectRulesReview
+subjectaccessreviews                                                                               authorization.k8s.io/v1                             false        SubjectAccessReview
+horizontalpodautoscalers                          hpa                                              autoscaling/v2                                      true         HorizontalPodAutoscaler
+backupplans                                                                                        backup.gdc.goog/v1                                  true         BackupPlan
+backuprepositories                                                                                 backup.gdc.goog/v1                                  false        BackupRepository
+backups                                                                                            backup.gdc.goog/v1                                  true         Backup
+clusterbackupplans                                                                                 backup.gdc.goog/v1                                  true         ClusterBackupPlan
+clusterbackuprepositories                                                                          backup.gdc.goog/v1                                  false        ClusterBackupRepository
+clusterbackups                                                                                     backup.gdc.goog/v1                                  true         ClusterBackup
+clusterrestoreplans                                                                                backup.gdc.goog/v1                                  true         ClusterRestorePlan
+clusterrestores                                                                                    backup.gdc.goog/v1                                  true         ClusterRestore
+clustervolumebackups                                                                               backup.gdc.goog/v1                                  true         ClusterVolumeBackup
+clustervolumerestores                                                                              backup.gdc.goog/v1                                  true         ClusterVolumeRestore
+deletebackuprequests                                                                               backup.gdc.goog/v1                                  true         DeleteBackupRequest
+deleteclusterbackuprequests                                                                        backup.gdc.goog/v1                                  true         DeleteClusterBackupRequest
+manualbackuprequests                                                                               backup.gdc.goog/v1                                  true         ManualBackupRequest
+manualclusterbackuprequests                                                                        backup.gdc.goog/v1                                  true         ManualClusterBackupRequest
+manualclusterrestorerequests                                                                       backup.gdc.goog/v1                                  true         ManualClusterRestoreRequest
+manualrestorerequests                                                                              backup.gdc.goog/v1                                  true         ManualRestoreRequest
+objectstoragebackupconfigs                                                                         backup.gdc.goog/v1                                  true         ObjectStorageBackupConfig
+restoreplans                                                                                       backup.gdc.goog/v1                                  true         RestorePlan
+restores                                                                                           backup.gdc.goog/v1                                  true         Restore
+volumebackups                                                                                      backup.gdc.goog/v1                                  true         VolumeBackup
+volumerestores                                                                                     backup.gdc.goog/v1                                  true         VolumeRestore
+cronjobs                                          cj                                               batch/v1                                            true         CronJob
+jobs                                                                                               batch/v1                                            true         Job
+billingaccountbindings                                                                             billing.gdc.goog/v1                                 true         BillingAccountBinding
+billingaccounts                                                                                    billing.gdc.goog/v1                                 true         BillingAccount
+skudescriptions                                                                                    billing.gdc.goog/v1                                 true         SKUDescription
+billingaccountbindingreplicas                                                                      billing.global.gdc.goog/v1                          true         BillingAccountBindingReplica
+billingaccountreplicas                                                                             billing.global.gdc.goog/v1                          true         BillingAccountReplica
+invoices                                                                                           billing.private.gdc.goog/v1alpha1                   true         Invoice
+onetimeusages                                                                                      billing.private.gdc.goog/v1alpha1                   true         OneTimeUsage
+recurringusages                                                                                    billing.private.gdc.goog/v1alpha1                   true         RecurringUsage
+skuconfigs                                                                                         billing.private.gdc.goog/v1alpha1                   true         SKUConfig
+certificatesigningrequests                        csr                                              certificates.k8s.io/v1                              false        CertificateSigningRequest
+clusters                                                                                           cluster.gdc.goog/v1                                 true         Cluster
+userclusterupgraderequests                                                                         cluster.gdc.goog/v1                                 true         UserClusterUpgradeRequest
+configs                                                                                            config.gatekeeper.sh/v1alpha1                       true         Config
+rootsyncs                                                                                          configsync.gke.io/v1beta1                           true         RootSync
+blockinvalidgdchrestrictedservice                                                                  constraints.gatekeeper.sh/v1beta1                   false        BlockInvalidGDCHRestrictedService
+gdchallowedchars                                                                                   constraints.gatekeeper.sh/v1beta1                   false        GDCHAllowedChars
+gdchallowedlength                                                                                  constraints.gatekeeper.sh/v1beta1                   false        GDCHAllowedLength
+gdchallowednamespaces                                                                              constraints.gatekeeper.sh/v1beta1                   false        GDCHAllowedNamespaces
+gdchreadonly                                                                                       constraints.gatekeeper.sh/v1beta1                   false        GDCHReadOnly
+gdchreservednames                                                                                  constraints.gatekeeper.sh/v1beta1                   false        GDCHReservedNames
+gdchreservedprefix                                                                                 constraints.gatekeeper.sh/v1beta1                   false        GDCHReservedPrefix
+gdchreservedsuffix                                                                                 constraints.gatekeeper.sh/v1beta1                   false        GDCHReservedSuffix
+gdchrestrictattribute                                                                              constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictAttribute
+gdchrestrictattributerange                                                                         constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictAttributeRange
+gdchrestrictbyattributes                                                                           constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictByAttributes
+gdchrestrictedservice                                                                              constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictedService
+gdchrestrictfinalizerremoval                                                                       constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictFinalizerRemoval
+gdchrestrictobjectstorageattributevalue                                                            constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictObjectStorageAttributeValue
+gdchrestrictresource                                                                               constraints.gatekeeper.sh/v1beta1                   false        GDCHRestrictResource
+gdchsuffixednamespace                                                                              constraints.gatekeeper.sh/v1beta1                   false        GDCHSuffixedNamespace
+gdchsystemclusterresource                                                                          constraints.gatekeeper.sh/v1beta1                   false        GDCHSystemClusterResource
+blockinvalidgdchrestrictedservicereplicas                                                          constraints.global.gatekeeper.sh/v1beta1            false        BlockInvalidGDCHRestrictedServiceReplica
+gdchallowedcharsreplicas                                                                           constraints.global.gatekeeper.sh/v1beta1            false        GDCHAllowedCharsReplica
+gdchallowedlengthreplicas                                                                          constraints.global.gatekeeper.sh/v1beta1            false        GDCHAllowedLengthReplica
+gdchallowednamespacesreplicas                                                                      constraints.global.gatekeeper.sh/v1beta1            false        GDCHAllowedNamespacesReplica
+gdchreadonlyreplicas                                                                               constraints.global.gatekeeper.sh/v1beta1            false        GDCHReadOnlyReplica
+gdchreservednamesreplicas                                                                          constraints.global.gatekeeper.sh/v1beta1            false        GDCHReservedNamesReplica
+gdchreservedprefixreplicas                                                                         constraints.global.gatekeeper.sh/v1beta1            false        GDCHReservedPrefixReplica
+gdchreservedsuffixreplicas                                                                         constraints.global.gatekeeper.sh/v1beta1            false        GDCHReservedSuffixReplica
+gdchrestrictattributerangereplicas                                                                 constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictAttributeRangeReplica
+gdchrestrictattributereplicas                                                                      constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictAttributeReplica
+gdchrestrictbyattributesreplicas                                                                   constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictByAttributesReplica
+gdchrestrictedservicereplicas                                                                      constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictedServiceReplica
+gdchrestrictfinalizerremovalreplicas                                                               constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictFinalizerRemovalReplica
+gdchrestrictobjectstorageattributevaluereplicas                                                    constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictObjectStorageAttributeValueReplica
+gdchrestrictresourcereplicas                                                                       constraints.global.gatekeeper.sh/v1beta1            false        GDCHRestrictResourceReplica
+gdchsuffixednamespacereplicas                                                                      constraints.global.gatekeeper.sh/v1beta1            false        GDCHSuffixedNamespaceReplica
+gdchsystemclusterresourcereplicas                                                                  constraints.global.gatekeeper.sh/v1beta1            false        GDCHSystemClusterResourceReplica
+leases                                                                                             coordination.k8s.io/v1                              true         Lease
+goldensignals                                                                                      dash.private.gdc.goog/v1alpha1                      true         GoldenSignals
+endpointslices                                                                                     discovery.k8s.io/v1                                 true         EndpointSlice
+searchconfigs                                                                                      discoveryengine.gdc.goog/v1                         true         SearchConfig
+localrollouts                                     lr                                               easysaas.goog/v1                                    true         LocalRollout
+moduleinstances                                   mi                                               easysaas.goog/v1                                    true         ModuleInstance
+saasinstances                                     si                                               easysaas.goog/v1                                    true         SaasInstance
+events                                            ev                                               events.k8s.io/v1                                    true         Event
+expansiontemplate                                                                                  expansion.gatekeeper.sh/v1alpha1                    false        ExpansionTemplate
+providers                                                                                          externaldata.gatekeeper.sh/v1beta1                  false        Provider
+featuregates                                                                                       featuregate.gdc.goog/v1                             false        FeatureGate
+stages                                                                                             featuregate.gdc.goog/v1                             false        Stage
+controlplaneagentsversions                                                                         fleet.dbadmin.gdc.goog/v1                           true         ControlPlaneAgentsVersion
+databaseparameters                                                                                 fleet.dbadmin.gdc.goog/v1                           false        DatabaseParameters
+databaseversions                                                                                   fleet.dbadmin.gdc.goog/v1                           false        DatabaseVersion
+failovers                                                                                          fleet.dbadmin.gdc.goog/v1                           true         Failover
+flags                                                                                              fleet.dbadmin.gdc.goog/v1                           false        Flags
+maintenancepolicies                                                                                fleet.dbadmin.gdc.goog/v1                           false        MaintenancePolicy
+softwarelibraries                                                                                  fleet.dbadmin.gdc.goog/v1                           false        SoftwareLibrary
+flowschemas                                                                                        flowcontrol.apiserver.k8s.io/v1                     false        FlowSchema
+prioritylevelconfigurations                                                                        flowcontrol.apiserver.k8s.io/v1                     false        PriorityLevelConfiguration
+protectedapplicationgroups                                                                         gkebackup.gke.io/v1                                 true         ProtectedApplicationGroup
+protectedapplications                                                                              gkebackup.gke.io/v1                                 true         ProtectedApplication
+ctmkeys                                                                                            hsm.gdc.goog/v1                                     true         CTMKey
+customroles                                                                                        iam.gdc.goog/v1                                     true         CustomRole
+identityproviderconfigs                                                                            iam.gdc.goog/v1                                     true         IdentityProviderConfig
+customrolereplicas                                                                                 iam.global.gdc.goog/v1                              true         CustomRoleReplica
+customroles                                                                                        iam.global.gdc.goog/v1                              true         CustomRole
+iamrolebindings                                                                                    iam.global.gdc.goog/v1                              true         IAMRoleBinding
+iamroles                                                                                           iam.global.gdc.goog/v1                              true         IAMRole
+identityproviderconfigreplicas                                                                     iam.global.gdc.goog/v1                              true         IdentityProviderConfigReplica
+identityproviderconfigs                                                                            iam.global.gdc.goog/v1                              true         IdentityProviderConfig
+zonalrolebindingreplicas                                                                           iam.global.gdc.goog/v1                              true         ZonalRoleBindingReplica
+zonalrolebindings                                                                                  iam.global.gdc.goog/v1                              true         ZonalRoleBinding
+ioauthmethodreplicas                                                                               iam.global.private.gdc.goog/v1alpha1                true         IOAuthMethodReplica
+expirationclusterrolebindings                                                                      iam.private.gdc.goog/v1alpha1                       false        ExpirationClusterRoleBinding
+expirationorganizationrolebindings                                                                 iam.private.gdc.goog/v1alpha1                       false        ExpirationOrganizationRoleBinding
+expirationprojectrolebindings                                                                      iam.private.gdc.goog/v1alpha1                       true         ExpirationProjectRoleBinding
+expirationrolebindings                                                                             iam.private.gdc.goog/v1alpha1                       true         ExpirationRoleBinding
+ioauthmethods                                                                                      iam.private.gdc.goog/v1alpha1                       true         IOAuthMethod
+userinfo                                                                                           iamview.private.gdc.goog/v1alpha1                   false        UserInfo
+storageversions                                                                                    internal.apiserver.k8s.io/v1alpha1                  false        StorageVersion
+subnets                                                                                            ipam.gdc.goog/v1                                    true         Subnet
+aeadkeys                                                                                           kms.gdc.goog/v1                                     true         AEADKey
+keyexports                                                                                         kms.gdc.goog/v1                                     true         KeyExport
+keyimports                                                                                         kms.gdc.goog/v1                                     true         KeyImport
+rotationjobs                                                                                       kms.gdc.goog/v1                                     false        RotationJob
+signingkeys                                                                                        kms.gdc.goog/v1                                     true         SigningKey
+resourcegroups                                                                                     kpt.dev/v1alpha1                                    true         ResourceGroup
+kubeapiserverreplicas                                                                              lcm.global.private.gdc.goog/v1alpha1                true         KubeAPIServerReplica
+componentoverrides                                                                                 lcm.private.gdc.goog/v1                             false        ComponentOverride
+componentrollouts                                                                                  lcm.private.gdc.goog/v1                             true         ComponentRollout
+components                                                                                         lcm.private.gdc.goog/v1                             false        Component
+kubeapiservers                                                                                     lcm.private.gdc.goog/v1                             true         KubeAPIServer
+secretforwarders                                                                                   lcm.private.gdc.goog/v1                             true         SecretForwarder
+subcomponentoverrides                                                                              lcm.private.gdc.goog/v1                             true         SubcomponentOverride
+subcomponents                                                                                      lcm.private.gdc.goog/v1                             true         Subcomponent
+loggingrules                                                                                       logging.gdc.goog/v1                                 true         LoggingRule
+loggingtargets                                                                                     logging.gdc.goog/v1                                 true         LoggingTarget
+siemorgforwarders                                                                                  logging.gdc.goog/v1                                 true         SIEMOrgForwarder
+auditloggingtargets                                                                                logging.private.gdc.goog/v1                         true         AuditLoggingTarget
+securityloggingtargets                                                                             logging.private.gdc.goog/v1alpha1                   true         SecurityLoggingTarget
+sieminfraforwarders                                                                                logging.private.gdc.goog/v1                         true         SIEMInfraForwarder
+maintenancepolicies                               mp                                               maintenance.goog/v1                                 true         MaintenancePolicy
+maintenancepolicybindings                                                                          maintenance.goog/v1                                 true         MaintenancePolicyBinding
+servicedescriptions                                                                                marketplace.gdc.goog/v1                             true         ServiceDescription
+serviceinstances                                                                                   marketplace.gdc.goog/v1                             true         ServiceInstance
+serviceversions                                                                                    marketplace.gdc.goog/v1                             true         ServiceVersion
+monitoringrules                                                                                    monitoring.gdc.goog/v1                              true         MonitoringRule
+monitoringtargets                                                                                  monitoring.gdc.goog/v1                              true         MonitoringTarget
+datasourcereplicas                                                                                 monitoring.global.private.gdc.goog/v1alpha1         true         DatasourceReplica
+cortexingesters                                                                                    monitoring.private.gdc.goog/v1alpha1                true         CortexIngester
+datasources                                                                                        monitoring.private.gdc.goog/v1alpha1                true         Datasource
+metricsproxysidecars                                                                               monitoring.private.gdc.goog/v1alpha1                true         MetricsProxySidecar
+servicelevelobjectives                            slo,slos                                         monitoring.private.gdc.goog/v1alpha1                true         ServiceLevelObjective
+assign                                                                                             mutations.gatekeeper.sh/v1                          false        Assign
+assignimage                                                                                        mutations.gatekeeper.sh/v1alpha1                    false        AssignImage
+assignmetadata                                                                                     mutations.gatekeeper.sh/v1                          false        AssignMetadata
+modifyset                                                                                          mutations.gatekeeper.sh/v1                          false        ModifySet
+clustermeshes                                                                                      network.global.private.gdc.goog/v1alpha1            true         ClusterMesh
+clustermeshreplicas                                                                                network.global.private.gdc.goog/v1alpha1            true         ClusterMeshReplica
+dnsregistrationreplicas                                                                            network.global.private.gdc.goog/v1alpha1            true         DNSRegistrationReplica
+dnsregistrations                                                                                   network.global.private.gdc.goog/v1alpha1            true         DNSRegistration
+dnszonereplicas                                                                                    network.global.private.gdc.goog/v1alpha1            true         DNSZoneReplica
+dnszones                                                                                           network.global.private.gdc.goog/v1alpha1            true         DNSZone
+resourcerecordsetreplicas                                                                          network.global.private.gdc.goog/v1alpha1            true         ResourceRecordSetReplica
+resourcerecordsets                                                                                 network.global.private.gdc.goog/v1alpha1            true         ResourceRecordSet
+zonednsservers                                                                                     network.global.private.gdc.goog/v1alpha1            true         ZoneDNSServers
+zonednsserversreplicas                                                                             network.global.private.gdc.goog/v1alpha1            true         ZoneDNSServersReplica
+aggswitchinternals                                                                                 network.private.gdc.goog/v1alpha1                   true         AggSwitchInternal
+borderleafswitchinternals                                                                          network.private.gdc.goog/v1alpha1                   true         BorderLeafSwitchInternal
+celltunnelallocations                                                                              network.private.gdc.goog/v1alpha1                   true         CellTunnelAllocation
+clusterbgppeers                                                                                    network.private.gdc.goog/v1alpha1                   true         ClusterBGPPeer
+clusterbgprouters                                                                                  network.private.gdc.goog/v1alpha1                   true         ClusterBGPRouter
+dnsregistrations                                                                                   network.private.gdc.goog/v1alpha1                   true         DNSRegistration
+dnszones                                                                                           network.private.gdc.goog/v1alpha1                   true         DNSZone
+fabrictunnelallocations                                                                            network.private.gdc.goog/v1alpha1                   true         FabricTunnelAllocation
+managementaggswitchinternals                                                                       network.private.gdc.goog/v1alpha1                   true         ManagementAggSwitchInternal
+managementswitchinternals                                                                          network.private.gdc.goog/v1alpha1                   true         ManagementSwitchInternal
+resourcerecordsets                                                                                 network.private.gdc.goog/v1alpha1                   true         ResourceRecordSet
+switchbootstraprequests                                                                            network.private.gdc.goog/v1alpha1                   true         SwitchBootstrapRequest
+switchdrainrequests                                                                                network.private.gdc.goog/v1alpha1                   true         SwitchDrainRequest
+switchimagedownloadrequests                                                                        network.private.gdc.goog/v1alpha1                   true         SwitchImageDownloadRequest
+switchimagehostrequests                                                                            network.private.gdc.goog/v1alpha1                   true         SwitchImageHostRequest
+switchupgraderequests                                                                              network.private.gdc.goog/v1alpha1                   true         SwitchUpgradeRequest
+torswitchinternals                                                                                 network.private.gdc.goog/v1alpha1                   true         TORSwitchInternal
+zonenetworks                                                                                       network.private.gdc.goog/v1alpha1                   true         ZoneNetwork
+backends                                                                                           networking.gdc.goog/v1                              true         Backend
+backendservicepolicies                                                                             networking.gdc.goog/v1                              true         BackendServicePolicy
+backendservices                                                                                    networking.gdc.goog/v1                              true         BackendService
+flowlogs                                                                                           networking.gdc.goog/v1                              true         FlowLog
+forwardingruleexternals                                                                            networking.gdc.goog/v1                              true         ForwardingRuleExternal
+forwardingruleinternals                                                                            networking.gdc.goog/v1                              true         ForwardingRuleInternal
+healthchecks                                                                                       networking.gdc.goog/v1                              true         HealthCheck
+organizationnetworkpolicies                       onp                                              networking.gdc.goog/v1                              true         OrganizationNetworkPolicy
+peergateways                                                                                       networking.gdc.goog/v1                              true         PeerGateway
+projectnetworkpolicies                            pnp                                              networking.gdc.goog/v1                              true         ProjectNetworkPolicy
+vpnbgppeers                                                                                        networking.gdc.goog/v1                              true         VPNBGPPeer
+vpngateways                                                                                        networking.gdc.goog/v1                              true         VPNGateway
+vpntunnels                                                                                         networking.gdc.goog/v1                              true         VPNTunnel
+backendservicepolicyreplicas                                                                       networking.global.gdc.goog/v1                       true         BackendServicePolicyReplica
+backendservicereplicas                                                                             networking.global.gdc.goog/v1                       true         BackendServiceReplica
+forwardingruleexternalreplicas                                                                     networking.global.gdc.goog/v1                       true         ForwardingRuleExternalReplica
+forwardingruleinternalreplicas                                                                     networking.global.gdc.goog/v1                       true         ForwardingRuleInternalReplica
+healthcheckreplicas                                                                                networking.global.gdc.goog/v1                       true         HealthCheckReplica
+manageddnszonereplicas                                                                             networking.global.gdc.goog/v1                       true         ManagedDNSZoneReplica
+manageddnszones                                                                                    networking.global.gdc.goog/v1                       true         ManagedDNSZone
+projectnetworkpolicyreplicas                      pnpreplica                                       networking.global.gdc.goog/v1                       true         ProjectNetworkPolicyReplica
+resourcerecordsetreplicas                                                                          networking.global.gdc.goog/v1                       true         ResourceRecordSetReplica
+resourcerecordsets                                                                                 networking.global.gdc.goog/v1                       true         ResourceRecordSet
+ingressclasses                                                                                     networking.k8s.io/v1                                false        IngressClass
+ingresses                                         ing                                              networking.k8s.io/v1                                true         Ingress
+ipaddresses                                       ip                                               networking.k8s.io/v1alpha1                          false        IPAddress
+networkpolicies                                   netpol                                           networking.k8s.io/v1                                true         NetworkPolicy
+servicecidrs                                                                                       networking.k8s.io/v1alpha1                          false        ServiceCIDR
+runtimeclasses                                                                                     node.k8s.io/v1                                      false        RuntimeClass
+bucketinfos                                                                                        object.gdc.goog/v1                                  true         BucketInfo
+buckets                                                                                            object.gdc.goog/v1                                  true         Bucket
+bucketlocationreplicas                                                                             object.global.gdc.goog/v1                           false        BucketLocationReplica
+bucketlocations                                                                                    object.global.gdc.goog/v1                           false        BucketLocation
+dashboards                                                                                         observability.gdc.goog/v1                           true         Dashboard
+observabilitypipelines                                                                             observability.gdc.goog/v1                           true         ObservabilityPipeline
+splunkadapters                                                                                     oneproducerstack.private.gdc.goog/v1alpha1          true         SplunkAdapter
+backupplans                                                                                        oracle.dbadmin.gdc.goog/v1                          true         BackupPlan
+backups                                                                                            oracle.dbadmin.gdc.goog/v1                          true         Backup
+dbclusters                                                                                         oracle.dbadmin.gdc.goog/v1                          true         DBCluster
+exports                                                                                            oracle.dbadmin.gdc.goog/v1                          true         Export
+imports                                                                                            oracle.dbadmin.gdc.goog/v1                          true         Import
+restores                                                                                           oracle.dbadmin.gdc.goog/v1                          true         Restore
+componentpivotjobs                                                                                 pivot.mz.private.gdc.goog/v1alpha1                  true         ComponentPivotJob
+pivots                                                                                             pivot.mz.private.gdc.goog/v1alpha1                  true         Pivot
+certificateauthorities                                                                             pki.security.gdc.goog/v1                            true         CertificateAuthority
+certificateissuers                                                                                 pki.security.gdc.goog/v1                            true         CertificateIssuer
+certificaterequests                                                                                pki.security.gdc.goog/v1                            true         CertificateRequest
+certificates                                                                                       pki.security.gdc.goog/v1                            true         Certificate
+poddisruptionbudgets                              pdb                                              policy/v1                                           true         PodDisruptionBudget
+backupplans                                                                                        postgresql.dbadmin.gdc.goog/v1                      true         BackupPlan
+backups                                                                                            postgresql.dbadmin.gdc.goog/v1                      true         Backup
+createstandbyjobs                                                                                  postgresql.dbadmin.gdc.goog/v1                      true         CreateStandbyJob
+dbclusters                                                                                         postgresql.dbadmin.gdc.goog/v1                      true         DBCluster
+deletestandbyjobs                                                                                  postgresql.dbadmin.gdc.goog/v1                      true         DeleteStandbyJob
+exports                                                                                            postgresql.dbadmin.gdc.goog/v1                      true         Export
+externalservers                                                                                    postgresql.dbadmin.gdc.goog/v1                      true         ExternalServer
+imports                                                                                            postgresql.dbadmin.gdc.goog/v1                      true         Import
+migrations                                                                                         postgresql.dbadmin.gdc.goog/v1                      true         Migration
+replications                                                                                       postgresql.dbadmin.gdc.goog/v1                      true         Replication
+restores                                                                                           postgresql.dbadmin.gdc.goog/v1                      true         Restore
+probes                                                                                             prober.private.gdc.goog/v1alpha1                    true         Probe
+clusterrolebindings                                                                                rbac.authorization.k8s.io/v1                        false        ClusterRoleBinding
+clusterroles                                                                                       rbac.authorization.k8s.io/v1                        false        ClusterRole
+rolebindings                                                                                       rbac.authorization.k8s.io/v1                        true         RoleBinding
+roles                                                                                              rbac.authorization.k8s.io/v1                        true         Role
+podschedulingcontexts                                                                              resource.k8s.io/v1alpha2                            true         PodSchedulingContext
+resourceclaimparameters                                                                            resource.k8s.io/v1alpha2                            true         ResourceClaimParameters
+resourceclaims                                                                                     resource.k8s.io/v1alpha2                            true         ResourceClaim
+resourceclaimtemplates                                                                             resource.k8s.io/v1alpha2                            true         ResourceClaimTemplate
+resourceclasses                                                                                    resource.k8s.io/v1alpha2                            false        ResourceClass
+resourceclassparameters                                                                            resource.k8s.io/v1alpha2                            true         ResourceClassParameters
+resourceslices                                                                                     resource.k8s.io/v1alpha2                            false        ResourceSlice
+organizationrolebindings                          orb                                              resourcemanager.gdc.goog/v1                         true         OrganizationRoleBinding
+organizationroles                                 or                                               resourcemanager.gdc.goog/v1                         true         OrganizationRole
+projectbindings                                   pb                                               resourcemanager.gdc.goog/v1                         true         ProjectBinding
+projectrolebindings                               prb                                              resourcemanager.gdc.goog/v1                         true         ProjectRoleBinding
+projectroles                                      pr                                               resourcemanager.gdc.goog/v1                         true         ProjectRole
+projects                                                                                           resourcemanager.gdc.goog/v1                         true         Project
+projectserviceaccounts                            psa                                              resourcemanager.gdc.goog/v1                         true         ProjectServiceAccount
+projectreplicas                                                                                    resourcemanager.global.gdc.goog/v1                  true         ProjectReplica
+projectserviceaccountreplicas                                                                      resourcemanager.global.gdc.goog/v1                  true         ProjectServiceAccountReplica
+clusterinfos                                                                                       resourcemanager.private.gdc.goog/v1alpha1           true         ClusterInfo
+istioauthorizationresources                                                                        resourcemanager.private.gdc.goog/v1alpha1           false        IstioAuthorizationResource
+projectwipeoutconfigs                                                                              resourcemanager.private.gdc.goog/v1alpha1           true         ProjectWipeoutConfig
+projectview                                       projectviews                                     resourcemanagerview.gdc.goog/v1                     false        ProjectView
+priorityclasses                                   pc                                               scheduling.k8s.io/v1                                false        PriorityClass
+rotatablesecrets                                                                                   secretrotation.private.gdc.goog/v1alpha1            true         RotatableSecret
+rotationrequests                                                                                   secretrotation.private.gdc.goog/v1alpha1            true         RotationRequest
+serviceisolationenvironmentconfigs                sisoeconfig                                      serviceenvironment.private.gdc.goog/v1alpha1        true         ServiceIsolationEnvironmentConfig
+serviceisolationenvironments                      sisoe                                            serviceenvironment.private.gdc.goog/v1alpha1        true         ServiceIsolationEnvironment
+shadowprojects                                                                                     serviceplatform.private.gdc.goog/v1alpha1           true         ShadowProject
+shadowprojecttemplates                                                                             serviceplatform.private.gdc.goog/v1alpha1           true         ShadowProjectTemplate
+constraintpodstatuses                                                                              status.gatekeeper.sh/v1beta1                        true         ConstraintPodStatus
+constrainttemplatepodstatuses                                                                      status.gatekeeper.sh/v1beta1                        true         ConstraintTemplatePodStatus
+expansiontemplatepodstatuses                                                                       status.gatekeeper.sh/v1beta1                        true         ExpansionTemplatePodStatus
+mutatorpodstatuses                                                                                 status.gatekeeper.sh/v1beta1                        true         MutatorPodStatus
+volumefailovers                                                                                    storage.gdc.goog/v1                                 true         VolumeFailover
+volumereplicationrelationshipreplicas                                                              storage.global.gdc.goog/v1                          true         VolumeReplicationRelationshipReplica
+volumereplicationrelationships                                                                     storage.global.gdc.goog/v1                          true         VolumeReplicationRelationship
+csidrivers                                                                                         storage.k8s.io/v1                                   false        CSIDriver
+csinodes                                                                                           storage.k8s.io/v1                                   false        CSINode
+csistoragecapacities                                                                               storage.k8s.io/v1                                   true         CSIStorageCapacity
+storageclasses                                    sc                                               storage.k8s.io/v1                                   false        StorageClass
+volumeattachments                                                                                  storage.k8s.io/v1                                   false        VolumeAttachment
+volumeattributesclasses                           vac                                              storage.k8s.io/v1alpha1                             false        VolumeAttributesClass
+addresspoolclaims                                                                                  system.private.gdc.goog/v1alpha1                    true         AddressPoolClaim
+aggswitches                                                                                        system.private.gdc.goog/v1alpha1                    true         AggSwitch
+ansibleplaybookroles                                                                               system.private.gdc.goog/v1alpha1                    true         AnsiblePlaybookRole
+ansibleplaybooks                                                                                   system.private.gdc.goog/v1alpha1                    true         AnsiblePlaybook
+attachmentgroups                                                                                   system.private.gdc.goog/v1alpha1                    true         AttachmentGroup
+bmcs                                                                                               system.private.gdc.goog/v1alpha1                    true         BMC
+borderleafswitches                                                                                 system.private.gdc.goog/v1alpha1                    true         BorderLeafSwitch
+celldatanetworks                                                                                   system.private.gdc.goog/v1alpha1                    true         CellDataNetwork
+cellmanagementnetworks                                                                             system.private.gdc.goog/v1alpha1                    true         CellManagementNetwork
+cells                                                                                              system.private.gdc.goog/v1alpha1                    true         Cell
+cidrclaims                                                                                         system.private.gdc.goog/v1alpha1                    true         CIDRClaim
+hairpinbgpsessions                                                                                 system.private.gdc.goog/v1alpha1                    true         HairpinBGPSession
+hairpinlinks                                                                                       system.private.gdc.goog/v1alpha1                    true         HairpinLink
+interconnectattachments                                                                            system.private.gdc.goog/v1alpha1                    true         InterconnectAttachment
+interconnectgroups                                                                                 system.private.gdc.goog/v1alpha1                    true         InterconnectGroup
+interconnectlinks                                                                                  system.private.gdc.goog/v1alpha1                    true         InterconnectLink
+interconnectsessions                                                                               system.private.gdc.goog/v1alpha1                    true         InterconnectSession
+managementaggswitches                                                                              system.private.gdc.goog/v1alpha1                    true         ManagementAggSwitch
+managementswitches                                                                                 system.private.gdc.goog/v1alpha1                    true         ManagementSwitch
+multizonenetworkconfigs                                                                            system.private.gdc.goog/v1alpha1                    true         MultiZoneNetworkConfig
+multizonenetworkpeeringconfigs                                                                     system.private.gdc.goog/v1alpha1                    true         MultiZoneNetworkPeeringConfig
+networkdevices                                                                                     system.private.gdc.goog/v1alpha1                    true         NetworkDevice
+nodetargetpolicies                                                                                 system.private.gdc.goog/v1alpha1                    true         NodeTargetPolicy
+ntpproxies                                                                                         system.private.gdc.goog/v1alpha1                    true         NTPProxy
+ntprelays                                                                                          system.private.gdc.goog/v1alpha1                    true         NTPRelay
+ntpservers                                                                                         system.private.gdc.goog/v1alpha1                    true         NTPServer
+orgmulticastexternalconfigs                                                                        system.private.gdc.goog/v1alpha1                    true         OrgMulticastExternalConfig
+osartifacts                                                                                        system.private.gdc.goog/v1alpha1                    true         OSArtifact
+osartifactsnapshots                               oas                                              system.private.gdc.goog/v1alpha1                    true         OSArtifactSnapshot
+ospolicies                                                                                         system.private.gdc.goog/v1alpha1                    true         OSPolicy
+routepolicies                                                                                      system.private.gdc.goog/v1alpha1                    true         RoutePolicy
+storageswitches                                                                                    system.private.gdc.goog/v1alpha1                    true         StorageSwitch
+subnetclaims                                                                                       system.private.gdc.goog/v1alpha1                    true         SubnetClaim
+switchacls                                                                                         system.private.gdc.goog/v1alpha1                    true         SwitchACL
+switchstaticconfigs                                                                                system.private.gdc.goog/v1alpha1                    true         SwitchStaticConfig
+systemusenotifications                                                                             system.private.gdc.goog/v1alpha1                    true         SystemUseNotification
+timeservers                                                                                        system.private.gdc.goog/v1alpha1                    true         TimeServer
+torswitches                                                                                        system.private.gdc.goog/v1alpha1                    true         TORSwitch
+trafficpolicies                                                                                    system.private.gdc.goog/v1alpha1                    true         TrafficPolicy
+transferappliancerequests                                                                          system.private.gdc.goog/v1alpha1                    true         TransferApplianceRequest
+useraccounts                                                                                       system.private.gdc.goog/v1alpha1                    true         UserAccount
+constrainttemplates                                                                                templates.gatekeeper.sh/v1                          false        ConstraintTemplate
+maintenancewindows                                                                                 upgrade.gdc.goog/v1                                 true         MaintenanceWindow
+organizationupgradeexecutionoverrides             orgueo                                           upgrade.gdc.goog/v1                                 true         OrganizationUpgradeExecutionOverride
+componentgroupreleasemetadata                     cgrmd                                            upgrade.private.gdc.goog/v1alpha1                   false        ComponentGroupReleaseMetadata
+componentreleasemetadata                          crmd                                             upgrade.private.gdc.goog/v1alpha1                   false        ComponentReleaseMetadata
+nodeupgrades                                      nu                                               upgrade.private.gdc.goog/v1alpha1                   true         NodeUpgrade
+nodeupgradetasks                                  nut                                              upgrade.private.gdc.goog/v1alpha1                   true         NodeUpgradeTask
+rolloutpolicies                                                                                    upgrade.private.gdc.goog/v1alpha1                   false        RolloutPolicy
+supportstatusinfos                                ssi                                              upgrade.private.gdc.goog/v1alpha1                   false        SupportStatusInfo
+userclustermetadata                                                                                upgrade.private.gdc.goog/v1alpha1                   false        UserClusterMetadata
+userclusterupgrades                                                                                upgrade.private.gdc.goog/v1alpha1                   true         UserClusterUpgrade
+virtualmachineaccessrequests                      vmaccessrequest,vmaccessrequests                 virtualmachine.gdc.goog/v1                          true         VirtualMachineAccessRequest
+virtualmachinebackupplans                         vmbackupplan,vmbackupplans                       virtualmachine.gdc.goog/v1                          true         VirtualMachineBackupPlan
+virtualmachinebackupplantemplates                 vmbackupplantemplate,vmbackupplantemplates       virtualmachine.gdc.goog/v1                          true         VirtualMachineBackupPlanTemplate
+virtualmachinebackuprequests                      vmbackuprequest,vmbackuprequests                 virtualmachine.gdc.goog/v1                          true         VirtualMachineBackupRequest
+virtualmachinebackups                             vmbackup,vmbackups                               virtualmachine.gdc.goog/v1                          true         VirtualMachineBackup
+virtualmachinedeletebackuprequests                vmdeletebackuprequest,vmdeletebackuprequests     virtualmachine.gdc.goog/v1                          true         VirtualMachineDeleteBackupRequest
+virtualmachinedisks                               gdisk,vmdisk                                     virtualmachine.gdc.goog/v1                          true         VirtualMachineDisk
+virtualmachineexternalaccesses                    vmexternalaccess,vmexternalaccesses              virtualmachine.gdc.goog/v1                          true         VirtualMachineExternalAccess
+virtualmachineimageimports                        vmimageimport,vmimageimports                     virtualmachine.gdc.goog/v1                          true         VirtualMachineImageImport
+virtualmachineimages                              vmimage,vmimages                                 virtualmachine.gdc.goog/v1                          true         VirtualMachineImage
+virtualmachinepasswordresetrequests               vmpasswordresetrequest,vmpasswordresetrequests   virtualmachine.gdc.goog/v1                          true         VirtualMachinePasswordResetRequest
+virtualmachinerestorerequests                     vmrestorerequest,vmrestorerequests               virtualmachine.gdc.goog/v1                          true         VirtualMachineRestoreRequest
+virtualmachinerestores                            vmrestore,vmrestores                             virtualmachine.gdc.goog/v1                          true         VirtualMachineRestore
+virtualmachines                                   gvm                                              virtualmachine.gdc.goog/v1                          true         VirtualMachine
+virtualmachinetypes                               vmtype,vmtypes                                   virtualmachine.gdc.goog/v1                          true         VirtualMachineType
+virtualmachineimage                               virtualmachineimages,vmimage,vmimages            virtualmachineview.gdc.goog/v1alpha1                true         VirtualMachineImage
+childnessusmanagerconfigs                         cnm                                              vulnerabilitymanagement.private.gdc.goog/v1alpha1   false        ChildNessusManagerConfig
+nessusagentconfigoverrides                                                                         vulnerabilitymanagement.private.gdc.goog/v1alpha1   true         NessusAgentConfigOverride
+nessusagentconfigs                                                                                 vulnerabilitymanagement.private.gdc.goog/v1alpha1   true         NessusAgentConfig
+nessusagents                                                                                       vulnerabilitymanagement.private.gdc.goog/v1alpha1   true         NessusAgent
+parentnessusmanagerconfigs                        pnm                                              vulnerabilitymanagement.private.gdc.goog/v1alpha1   false        ParentNessusManagerConfig
