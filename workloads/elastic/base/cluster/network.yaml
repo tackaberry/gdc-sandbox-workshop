@@ -33,3 +33,19 @@ spec:
         matchLabels:
           app: elasticsearch
 ---
+# netpol-allow-all.yaml (Only for testing!)
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-all-within-namespace
+spec:
+  podSelector: {} # Selects ALL pods in the namespace
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector: {} # Allows ingress from ANY pod in the namespace
+  egress:
+  - to:
+    - podSelector: {} # Allows egress to ANY pod in the namespace
