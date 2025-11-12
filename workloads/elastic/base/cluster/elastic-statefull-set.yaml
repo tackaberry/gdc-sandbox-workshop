@@ -69,7 +69,7 @@ spec:
         securityContext:
           privileged: true
       imagePullSecrets:
-      - name: ${HARBOR_SECRET}
+      - name: harbor-secret
   volumeClaimTemplates:
   - metadata:
       name: data
