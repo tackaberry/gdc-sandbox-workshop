@@ -5,7 +5,7 @@ labels:
     app-name: elasticsearch
 
 resources:
-- elastic-statefull-set.yaml
+- elastic-stateful-set.yaml
 - headless-service.yaml
 - kibana.yaml
 - network.yaml
