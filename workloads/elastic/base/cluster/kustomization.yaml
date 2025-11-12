@@ -1,6 +1,6 @@
 
 labels:
-- includeSelectors: true
+- includeSelectors: false
   pairs:
     app-name: elasticsearch
 

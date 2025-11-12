@@ -32,7 +32,7 @@ spec:
         ports:
         - containerPort: 5601
       imagePullSecrets:
-      - name: harbor-secret
+      - name: ${HARBOR_SECRET}
       volumes:
       - name: config-volume
         configMap:
@@ -59,4 +59,4 @@ metadata:
 data:
   kibana.yml: |
     server.host: "0.0.0.0"
-    elasticsearch.hosts: ["http://elasticsearch:9200"]
+    elasticsearch.hosts: ["http://elasticsearch.${NAMESPACE}.svc.cluster.local:9200"]

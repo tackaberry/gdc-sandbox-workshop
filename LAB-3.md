@@ -15,7 +15,6 @@ pull "busybox:latest" "busybox"
 # change repo name "tack-1" in app.properties
 vi workloads/elastic/base/cluster/app.properties
 
-
 ku apply -k workloads/elastic/base/cluster
 
 ```
@@ -28,29 +27,11 @@ ku get svc
 
 Get webserver ip address
 ```bash
-export TRANSLATION_IP=$(ku get svc -l app-name=translation-app -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
-echo $TRANSLATION_IP
-echo "export TRANSLATION_IP=${TRANSLATION_IP}"
+export KIBANA_IP=$(ku get svc -l app=kibana -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
+echo $KIBANA_IP
 
-ku logs $(ku get pods -l app-name=translation-app -o jsonpath='{.items[0].metadata.name}')
-```
-
-```bash
-
-curl -X GET http://$TRANSLATION_IP
-
-curl -X POST -H 'Content-Type: application/json' -d '{"text": "Hello, world!", "target_language": "es"}' http://${TRANSLATION_IP}/translate
+ku logs $(ku get pods -l app=kibana -o jsonpath='{.items[0].metadata.name}')
 
 ```
 
-4. Review logs in Grafana. 
-
-5. Make a change and redeploy. 
-
-```bash
-vi workloads/translation-app/app/main.py
-build ./workloads/translate-api/app translate
-ku rollout restart deploy translation-app
-
-```
-6. ReTest over ssh
+6. Test in browser over ssh
