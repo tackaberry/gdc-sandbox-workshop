@@ -1,0 +1,44 @@
+projects:
+- name: tack-1
+  orgId: org-1
+  description: This is Project 1
+  users:
+    - user: fop-platform-admin@example.com
+      roleSetRef: roleSets/developer
+    - user: fop-tackaberry@google.com
+      roleSetRef: roleSets/developer
+- name: user-project
+  users:
+    - user: fop-tackaberry@google.com
+      roleSetRef: roleSets/harborUser
+roleSets:
+  developer:
+    roles:
+      - ai-ocr-developer
+      - ai-translation-developer
+      - harbor-instance-admin
+      - harbor-instance-viewer
+      - kms-admin
+      - project-iam-admin
+      - project-networkpolicy-admin
+      - secret-admin
+      - workbench-notebooks-admin
+      - k8s-networkpolicy-admin
+      - namespace-admin
+      - project-viewer
+      - vertex-ai-prediction-user
+      - project-grafana-viewer
+      - project-db-admin
+      - project-vm-admin
+      - project-vm-image-admin
+    orgRoles:
+      - ai-platform-admin
+  viewer:
+    roles:
+      - project-viewer
+  harborUser:
+    roles:
+      - project-viewer
+      - harbor-instance-viewer
+      - harbor-instance-admin
+
