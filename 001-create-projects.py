@@ -39,6 +39,7 @@ def main():
                                 "projects",
                                 "create",
                                 project_name,
+                                "--data-exfiltration-prevention=false",
                             ]
                             create_result = subprocess.run(
                                 create_command, capture_output=True, text=True, check=False
