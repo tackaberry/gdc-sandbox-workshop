@@ -9,6 +9,8 @@ projects:
       roleSetRef: roleSets/developer
 - name: user-project
   users:
+    - user: fop-platform-admin@example.com
+      roleSetRef: roleSets/developer
     - user: fop-tackaberry@google.com
       roleSetRef: roleSets/harborUser
 roleSets:
