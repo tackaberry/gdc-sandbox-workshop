@@ -2,7 +2,7 @@
 
 For context, we'll review ku alias, build script, and kustomization. 
 
-1. On sandbox, login. 
+1. On sandbox bootstrapper, login. 
 
 Confirm `.env` settings. 
 
